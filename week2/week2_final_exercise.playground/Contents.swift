@@ -41,7 +41,7 @@ El proyecto deberá estar en la cuenta de GitHub del alumno
 
 
 
-for num in 1...100 {
+for num in 0...100 {
     if num % 5 == 0 {
         print ("\(num) Bingo!!!")
     }
