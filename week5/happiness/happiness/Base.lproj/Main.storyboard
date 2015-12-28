@@ -35,34 +35,28 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6M6-G1-Ygf">
-                                <rect key="frame" x="60" y="269" width="200" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="NextHappyMesssage">
-                                            <attributes>
-                                                <color key="NSColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <action selector="giveMeAMessage" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Nv-NO-SK0"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nSc-83-rfr">
+                                <rect key="frame" x="60" y="269" width="144" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6M6-G1-Ygf">
+                                        <rect key="frame" x="0.0" y="0.0" width="144" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <color key="tintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="NextHappyMesssage">
+                                            <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="giveMeAMessage" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Nv-NO-SK0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="r58-uJ-Bzl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="44" id="0MF-hd-0gk"/>
-                            <constraint firstItem="6M6-G1-Ygf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="249" id="67h-zB-GnM"/>
-                            <constraint firstItem="r58-uJ-Bzl" firstAttribute="leading" secondItem="6M6-G1-Ygf" secondAttribute="leading" id="QPF-rm-Bt2"/>
-                            <constraint firstItem="6M6-G1-Ygf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SCj-mJ-aKn"/>
                             <constraint firstItem="r58-uJ-Bzl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="Wfh-Ut-XUB"/>
-                            <constraint firstItem="6M6-G1-Ygf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gMl-Tl-cau"/>
                         </constraints>
                     </view>
                     <connections>
